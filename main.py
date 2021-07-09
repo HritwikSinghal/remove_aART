@@ -24,6 +24,7 @@ def getSongList(files: list):
         x = re.findall(r'(.+\.m4a)', x)
         if len(x) != 0:
             songs.append(x[0])
+    sorted(songs)
     return songs
 
 
